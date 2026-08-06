@@ -1676,3 +1676,9 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print("\nBot stopped.")
         sys.exit(0)
+        # new.py এর শেষে এই অংশ যোগ করো:
+
+# webhook সেট করার ফাংশন
+async def set_webhook():
+    webhook_url = "https://garena-host.vercel.app/webhook"
+    await bot.set_webhook(webhook_url)
